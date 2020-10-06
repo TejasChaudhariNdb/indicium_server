@@ -16,12 +16,15 @@ router.get('/', (req, res) => {
 let username = req.body.username
 let password = req.body.password
 
-// Ikde models.users la check jr
+// Filter logic
+let user = Object.values(models.users).filter(el => el.username === username && el.password === password)
 
-if(true){
+if(user.length != 0){
 res.send(true)
 } Else{
 Res.send(false)
 }
+
+
 })
 export default router;
