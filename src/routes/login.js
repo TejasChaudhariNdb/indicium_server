@@ -1,4 +1,5 @@
 import { Router } from 'express';
+const models = require('../models')
 
 const router = Router();
 
@@ -11,5 +12,16 @@ router.get('/', (req, res) => {
 });
  */
 
- router.post()
+ router.post((req, Res) => {
+let username = req.body.username
+let password = req.body.password
+
+// Ikde models.users la check jr
+
+if(true){
+res.send(true)
+} Else{
+Res.send(false)
+}
+})
 export default router;
