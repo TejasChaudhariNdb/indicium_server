@@ -3,16 +3,9 @@ const models = require('../models')
 
 const router = Router();
 
-router.get('/', (req, res) => {
-  return res.send(Object.values(req.context.models.users));
-});
 
-/* router.get('/:username', (req, res) => {
-  return res.send(req.context.models.users[req.params.username]);
-});
- */
-
- router.post((req, Res) => {
+/*
+router.post((req, res) => {
 let username = req.body.username
 let password = req.body.password
 
@@ -21,10 +14,32 @@ let user = Object.values(models.users).filter(el => el.username === username && 
 
 if(user.length != 0){
 res.send(true)
-} Else{
-Res.send(false)
+}else{
+res.send(false)
 }
 
 
 })
+
+*/
+
+
+router.get('/:login',(req, res) => {
+ 
+  console.log("BABA")
+  let username = req.query.username
+  let password = req.query.password
+  
+  // Filter logic
+  let user = Object.values(models.users).filter(el => el.username === username && el.password === password)
+  
+  if(user.length != 0){
+  res.send(true)
+  }else{
+  res.send(false)
+  }
+  
+  })
+  
+
 export default router;

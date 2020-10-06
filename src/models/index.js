@@ -1,7 +1,4 @@
 
-
-
-
 let users = {
   1: {
     id: '1',
@@ -30,16 +27,26 @@ let messages = {
 
 let riskReduction = {
 1:{
+  uuid:'5551',
   name:'Barry Allen',
   driver:[{name:'Driver Fatigue',per:'57%'},{name:'Speeding',per:'2%'},{name:'Safe Trailing Distance ',per:'9%'},{name:'Route Familiarity',per:'10%'},{name:'Vehicle Maintenance',per:'8%'},{name:'Cellphone ',per:'0%'}]
 },
 2:{
+  
+  uuid:'5552',
+  name:'Jayesh',
   driver:[{name:'Driver Fatigue',per:'57%'},{name:'Speeding',per:'2%'},{name:'Safe Trailing Distance ',per:'9%'},{name:'Route Familiarity',per:'10%'},{name:'Vehicle Maintenance',per:'8%'},{name:'Cellphone ',per:'0%'}]
 },
 3:{
+  
+  uuid:'5553',
+  name:'Aniket',
   driver:[{name:'Driver Fatigue',per:'57%'},{name:'Speeding',per:'2%'},{name:'Safe Trailing Distance ',per:'9%'},{name:'Route Familiarity',per:'10%'},{name:'Vehicle Maintenance',per:'8%'},{name:'Cellphone ',per:'0%'}]
 },
 4:{
+  
+  uuid:'5554',
+  name:'Tejas',
   driver:[{name:'Driver Fatigue',per:'57%'},{name:'Speeding',per:'2%'},{name:'Safe Trailing Distance ',per:'9%'},{name:'Route Familiarity',per:'10%'},{name:'Vehicle Maintenance',per:'8%'},{name:'Cellphone ',per:'0%'}]
 },
 
